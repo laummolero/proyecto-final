@@ -6,17 +6,8 @@
 .main-videos div h1{
     color: #003C43;
 }
-.videos{
+
+.video-container{
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    gap: 20px;
-    flex-wrap: wrap;
-    img{
-        width: 100px;
-        height: 100px;
-    }
+    justify-content: center;
 }
