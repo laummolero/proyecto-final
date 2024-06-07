@@ -3,6 +3,7 @@
     margin: 50px;
     color: #003C43;
 }
+
 .news-container{
     display: grid;
     width: 80%;
@@ -21,19 +22,36 @@
     }
     .divInfo1{
         grid-area: divInfo1;
+        @media (max-width:792px){
+            height: 175px;
+            overflow: hidden;
+        }
     }
     .divImg2{
         grid-area: divImg2;
     }
     .divInfo2{
         grid-area: divInfo2;
+        @media (max-width:792px){
+            height: 175px;
+            overflow: hidden;
+        }
     }
     div a img{
-        width: 100%;
+        max-width: 100%;
         height: auto;
+        
     }
-    .news-container div p{
-        width: 100%;
-        height: auto;
+    .divInfo1 p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: arial;
+            font-size: .875rem;
+            text-align: justify;
+    }
+    .divInfo2 p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: arial;
+            font-size: .875rem;
+            text-align: justify;
     }
 }

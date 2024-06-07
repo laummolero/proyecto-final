@@ -29,80 +29,33 @@
         <div>
             <h1>Letters with notes</h1>
         </div>
-        
-        <div id="carousel-example" class="carousel slide">
-            <ol class="carousel-indicators">
-                <!-- Add indicators for each slide -->
-                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example" data-slide-to="1"></li>
-                <!-- Add more indicators as needed -->
-            </ol>
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <!-- First slide with YouTube video -->
-                <div class="carousel-item active">
-                    <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/RowlrvmyFEk?si=Dj5_ZMNjKHjIx7Nd" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="DAY6 Welcome to the Show M/V"></iframe>
-                    </div>
+                <div class="carousel-item active" data-bs-target="#carouselExample" data-bs-slide-to="0">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RowlrvmyFEk?si=j9D5-77laknh_edc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="carousel-item active">
-                    <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/sWXGbkM0tBI?si=n46Z9x8_wjloGpJg" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="DAY6 HAPPY M/V"></iframe>
-                    </div>
+                <div class="carousel-item" data-bs-target="#carouselExample" data-bs-slide-to="1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sWXGbkM0tBI?si=nsUZse8fC6jPrU7n" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="carousel-item active">
-                    <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/rZ1w-8xoUIU?si=ealVrNgz7OjPu1t4" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                <div class="carousel-item" data-bs-target="#carouselExample" data-bs-slide-to="2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rZ1w-8xoUIU?si=zNovcWPb9mlM20nK" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                 </div>
                 
             </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-        <div class="container">
-            <div id="youtubeCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/RowlrvmyFEk?si=Dj5_ZMNjKHjIx7Nd" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="DAY6 Welcome to the Show M/V"></iframe>
-                    </div>
-                    <div class="carousel-item">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/sWXGbkM0tBI?si=n46Z9x8_wjloGpJg" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="DAY6 HAPPY M/V"></iframe>
-                    </div>
-                    <div class="carousel-item">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/rZ1w-8xoUIU?si=ealVrNgz7OjPu1t4" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" type="button" data-bs-target="#youtubeCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" type="button" data-bs-target="#youtubeCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-        </div>
-
-        <div id="youtubeCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="video-container">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/RowlrvmyFEk?si=Dj5_ZMNjKHjIx7Nd" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="DAY6 Welcome to the Show M/V"></iframe>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="video-container">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/sWXGbkM0tBI?si=n46Z9x8_wjloGpJg" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="DAY6 HAPPY M/V"></iframe>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="video-container">
-                        <iframe video width="560" height="315" src="https://www.youtube.com/embed/rZ1w-8xoUIU?si=ealVrNgz7OjPu1t4" title="YouTube video player" style="margin: 0 auto; display: block;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
 
         
-    
     </main>
     <footer class="footer">
         <div class="socials">

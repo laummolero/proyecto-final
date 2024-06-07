@@ -9,23 +9,5 @@
 @import "./layout/main-news";
 
 
-@media (max-width:560px){
-    header{
-        flex-direction: column;
-        height: 220px;
-    }
-    header nav ul{
-        flex-direction: column;
 
-    }
-}
 
-@media (max-width:430px){
-    footer{
-        flex-direction: column;
-        height: 250px;
-    }
-    .socials{
-        flex-direction: column;
-    }
-}

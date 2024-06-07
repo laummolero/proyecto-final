@@ -18,10 +18,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 30px; }
+    gap: 50px; }
     header nav ul li a {
       text-decoration: none;
       color: #003C43; }
+
+@media (max-width: 560px) {
+  header {
+    flex-direction: column;
+    height: 220px; }
+  header nav ul {
+    flex-direction: column; } }
 
 footer {
   background-color: #035761;
@@ -30,6 +37,7 @@ footer {
   display: flex;
   flex-direction: row;
   position: absolute;
+  margin-bottom: 0;
   justify-content: space-between;
   align-items: center;
   padding-left: 30px;
@@ -44,10 +52,16 @@ footer {
     width: 50px;
     height: 50px; }
 
+@media (max-width: 430px) {
+  footer {
+    flex-direction: column;
+    height: 250px; }
+    footer .socials {
+      flex-direction: column; } }
+
 body {
   background-image: linear-gradient(#E3FEF7, #77B0AA);
-  min-height: 100vh;
-  padding-bottom: 50px; }
+  min-height: 100vh; }
 
 .foureverHome {
   width: 100%;
@@ -71,15 +85,26 @@ body {
   align-items: center;
   color: #003C43; }
 
-.albumSpotify {
-  display: flex;
-  justify-content: space-evenly;
+.carousel {
+  margin-bottom: 6.25rem; }
+  .carousel .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 500px; }
+  @media (max-width: 560px) {
+    .carousel {
+      width: 70%;
+      height: 6.25rem;
+      margin-bottom: 6.25rem; } }
+
+.carousel-item iframe {
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px; }
-  .albumSpotify img {
-    width: 100px;
-    height: 100px; }
+  width: 31.25rem; }
+  @media (max-width: 560px) {
+    .carousel-item iframe {
+      width: 100%;
+      height: 12.5rem; } }
 
 .members {
   display: flex;
@@ -93,7 +118,11 @@ body {
   .members .profiles p {
     width: 12.5rem;
     height: 12.5rem;
-    color: #003C43; }
+    color: #003C43;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: arial;
+    font-size: .875rem;
+    text-align: justify; }
   .members .profiles img {
     width: 200px;
     height: auto; }
@@ -111,9 +140,8 @@ body {
 .main-videos div h1 {
   color: #003C43; }
 
-.video-container {
-  display: flex;
-  justify-content: center; }
+.carousel-inner {
+  align-items: center; }
 
 .news h1 {
   text-align: center;
@@ -134,27 +162,28 @@ body {
     grid-area: divImg1; }
   .news-container .divInfo1 {
     grid-area: divInfo1; }
+    @media (max-width: 792px) {
+      .news-container .divInfo1 {
+        height: 175px;
+        overflow: hidden; } }
   .news-container .divImg2 {
     grid-area: divImg2; }
   .news-container .divInfo2 {
     grid-area: divInfo2; }
+    @media (max-width: 792px) {
+      .news-container .divInfo2 {
+        height: 175px;
+        overflow: hidden; } }
   .news-container div a img {
-    width: 100%;
+    max-width: 100%;
     height: auto; }
-  .news-container .news-container div p {
-    width: 100%;
-    height: auto; }
-
-@media (max-width: 560px) {
-  header {
-    flex-direction: column;
-    height: 220px; }
-  header nav ul {
-    flex-direction: column; } }
-
-@media (max-width: 430px) {
-  footer {
-    flex-direction: column;
-    height: 250px; }
-  .socials {
-    flex-direction: column; } }
+  .news-container .divInfo1 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: arial;
+    font-size: .875rem;
+    text-align: justify; }
+  .news-container .divInfo2 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: arial;
+    font-size: .875rem;
+    text-align: justify; }

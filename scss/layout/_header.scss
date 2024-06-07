@@ -14,7 +14,7 @@ header{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            gap: 30px;
+            gap: 50px;
             li{
                 a{
                     text-decoration: none;
@@ -22,5 +22,15 @@ header{
                 }
             }
         }
+    }
+}
+@media (max-width:560px){
+    header{
+        flex-direction: column;
+        height: 220px;
+    }
+    header nav ul{
+        flex-direction: column;
+
     }
 }
