@@ -1,11 +1,15 @@
-.main-videos div{
+.main-videos{
+    min-height: 100vh;
+    div{
     display: flex;
     justify-content: space-evenly ;
     margin-top: 30px;
+    }
+    h1{
+        color: #003C43;
+    }
 }
-.main-videos div h1{
-    color: #003C43;
-}
+
 .carousel-inner{
     align-items: center;
 }

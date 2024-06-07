@@ -22,8 +22,11 @@
         height: auto;
     }
 }
-.day6members h1{
+.day6members{
+    min-height: 100vh;
+    h1{
     text-align: center;
     margin: 50px;
     color: #003C43;
+    }
 }

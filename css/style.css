@@ -26,7 +26,7 @@ header {
 @media (max-width: 560px) {
   header {
     flex-direction: column;
-    height: 220px; }
+    height: 320px; }
   header nav ul {
     flex-direction: column; } }
 
@@ -63,6 +63,9 @@ body {
   background-image: linear-gradient(#E3FEF7, #77B0AA);
   min-height: 100vh; }
 
+.home {
+  min-height: 100vh; }
+
 .foureverHome {
   width: 100%;
   height: 100%;
@@ -73,10 +76,12 @@ body {
     height: auto;
     align-items: center; }
 
-.discography div h1 {
-  text-align: center;
-  margin: 50px;
-  color: #003C43; }
+.discography {
+  min-height: 100vh; }
+  .discography div h1 {
+    text-align: center;
+    margin: 50px;
+    color: #003C43; }
 
 .albumYear {
   display: flex;
@@ -127,26 +132,31 @@ body {
     width: 200px;
     height: auto; }
 
-.day6members h1 {
-  text-align: center;
-  margin: 50px;
-  color: #003C43; }
+.day6members {
+  min-height: 100vh; }
+  .day6members h1 {
+    text-align: center;
+    margin: 50px;
+    color: #003C43; }
 
-.main-videos div {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 30px; }
-
-.main-videos div h1 {
-  color: #003C43; }
+.main-videos {
+  min-height: 100vh; }
+  .main-videos div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px; }
+  .main-videos h1 {
+    color: #003C43; }
 
 .carousel-inner {
   align-items: center; }
 
-.news h1 {
-  text-align: center;
-  margin: 50px;
-  color: #003C43; }
+.news {
+  min-height: 100vh; }
+  .news h1 {
+    text-align: center;
+    margin: 50px;
+    color: #003C43; }
 
 .news-container {
   display: grid;
